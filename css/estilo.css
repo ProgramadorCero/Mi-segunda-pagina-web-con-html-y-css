@@ -1,0 +1,137 @@
+*{
+	margin: 0px;
+}
+
+.cabecera{
+	display: block;
+	width: 100%;
+	background: url("../src/cabecera.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top;
+	height: auto;
+}
+.menu {
+	display: flex;
+	text-align: center;
+	background: rgb(0,0,0,0.6);
+}
+.logos{
+	height: 15vw;
+}
+.menu a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	font-size: 2vw;
+	padding: 1vw 2vw 1vw 2vw;
+}
+.menu a:hover{
+	background: white;
+	color: black;
+}
+.menu ul{
+	display: inline-flex;
+	padding: 0px;
+	margin: auto;
+}
+
+.cabecera li{
+	display: inline-flex;
+	list-style: none;
+}
+.contenedor{
+	margin: auto;
+	width: 80%;
+}
+.textocentral{
+	float: left;
+	width: 70%;
+}
+.imagencentral img{
+	width: 100%;
+}
+.imagencentral{
+	display: flex;
+	width: 30%;
+	float: left;
+	height: 50vw;
+}
+.textocentral{
+	color: white;
+	background: url("../src/fondotexto.png"), url("../src/selva.jpg");
+	background-size: contain , cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-style: solid;
+	border-color: black;
+	padding: 4vw;
+	box-sizing: border-box;
+	height: 50vw;
+}
+.centrartexto{
+	margin: 3vw;
+}
+.textocentral p{
+	text-align: justify;
+	font-size: 1.5vw;
+}
+.textocentral h3, .textocentral h1{
+	text-align: center;
+	font-size: 2vmax;
+}
+
+.cabecera .logo{
+	margin-left: 6vw;
+	width: 16%;
+}
+.cabecera .logo2{
+	margin-top: 3vw;
+	width: 30%;
+	float: right;
+	margin-right: 6vw;
+}
+
+.personajes{
+	clear: both;
+	text-align: center;
+}
+
+.personajes div {
+	width: 17vw;
+	padding-right: 1.5vw;
+	display: inline-block;
+}
+.personajes p{
+	width: 100%;
+	font-size: 1.5vw;
+	text-align: center;
+	font-weight: bold;
+}
+
+.personajes img{
+	width: 100%;
+}
+.personajes div{
+	margin:auto;
+}
+
+@media (max-width: 350px){
+	.logos, .logo, .logo2{
+		height: 0px;
+	}
+	.menu{
+		width: 100%;
+	}
+	.textocentral{
+		padding: 6vw;
+		width: 100%;
+	}
+	.imagencentral{
+		height: 0px;
+	}
+	.personajes div{
+		width: 16vw;
+		padding: 0px;
+	}
+}
